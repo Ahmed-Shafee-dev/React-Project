@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Login from "../login/Login";
 import HomePage from "../pages/home/HomePage";
 import ContactUS from "../components/contactUs/ContactUS";
-import StartedPage from "../singlePage/startedPage";
+import StartedPage from "../singlePage/startedPage.jsx";
 
 export const routing = createBrowserRouter([
     {
