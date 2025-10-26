@@ -32,8 +32,7 @@ useEffect(() => {
     }, []);
     return (
         <>
-            <div className="m-auto mt-40 relative xl:w-[15em] md:w-[12.5em] w-[13.5em]">
-                {/* data-aos="fade-right" */}
+            <div className="m-auto mt-40 relative xl:w-[15em] md:w-[12.5em] w-[13.5em]" data-aos="fade-right">
                 <h2 className="xl:text-3xl md:text-2xl text-xl font-semibold xl:ml-6 md:ml-8 ml-12 text-blue-700 capitalize">Who are we</h2>
                 <svg className="text-blue-800 mt-2.5 w-55" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="red" stroke-width="3"></path>
