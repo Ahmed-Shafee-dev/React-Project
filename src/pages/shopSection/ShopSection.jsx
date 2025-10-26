@@ -42,7 +42,7 @@ export default function ShopSection() {
             <section className="shop-section">
                 <CustomCountainer customclass="bg-gray-100 mt-1 p-2">
                     <CustomTabs data={myCategory} activeTab={activeTab} setActiveTab={setActiveTab} />
-                    <div className="shop-section-product grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-5 md:gap-3.5 gap-2.5">
+                    <div className="shop-section-product grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-4 md:gap-2.5 gap-1.5">
                         {filterProduct.map((item, index) => showItemCount > index && <ShopData key={index} item={item} />)}
                     </div>
                     <div className="flex items-center justify-center mt-10">

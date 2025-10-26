@@ -13,7 +13,7 @@ export default function Graduatetion({ data }) {
                 </button>
                 {pupop && (
                     <div className="fixed flex items-center justify-center z-20 w-full h-full bg-[rgba(0,0,0,0.6)] top-0 left-0">
-                        <div className="max-w-2xl relative w-[40%] bg-white rounded-2xl p-5.5">
+                        <div className="relative xl:w-[40%] md:w-[45%] w-[60%] bg-white rounded-2xl p-5">
                             <button className="absolute top-2 right-1.5" onClick={() => setPopup(!pupop)}>
                                 <MdOutlineExitToApp className=" hover:text-indigo-600 cursor-pointer " size={20} />
                             </button>

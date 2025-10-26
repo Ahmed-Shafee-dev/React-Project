@@ -32,7 +32,7 @@ export default function ShopData({ item }) {
                         <img className="w-full h-full object-cover" src={item.img} alt={item.title} />
                         <div className="shop-data top-0 absolute left-0 w-full h-full flex justify-end flex-col bg-[rgba(0,0,0,.2)]">
                             <div
-                                className="shop-data-layer rounded-full border-2 border-fuchsia-200 w-7.5 h-7.5 absolute flex items-center justify-center -top-8 right-3 cursor-pointer group-hover:top-3 duration-300"
+                                className="shop-data-layer rounded-full border-2 border-fuchsia-200 w-7.5 h-7.5 absolute flex items-center justify-center xl:-top-8 md:-top-10 top-2.5 right-3 cursor-pointer xl:group-hover:top-3 md:group-hover:top-2.8 duration-300"
                                 onClick={handleHeartClick}>
                                 {inWishList(item.id) ? <FaShoppingCart className="text text-yellow-300" /> : <FaShoppingCart className="text-white" />}
                             </div>
