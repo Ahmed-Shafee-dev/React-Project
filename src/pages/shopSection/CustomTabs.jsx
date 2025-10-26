@@ -4,7 +4,7 @@ import React from "react";
 export default function CustomTabs({ data, setActiveTab, activeTab }) {
     return (
         <>
-            <div className="flex items-center gap-4">
+            <div className="flex xl:gap-4 md:gap-3 gap-2">
                 {data.map((item, index) => (
                     <span
                         key={index}

@@ -44,7 +44,7 @@ export default function Login() {
             <NavbarLogin />
             <section className="h-[92.6vh] bg-slate-100 flex justify-center items-center ">
                 <CustomContainer customClass={"w-[50%]"}>
-                    <h2 className="font-medium text-5xl absolute top-20 left-171 ">{isSignUp ? "Sign Up" : "Login"}</h2>
+                    <h2 className="font-medium xl:text-5xl md:text-4xl text-3xl xl:mb-[3em] md:mb-[3.1em] mb-[2em] xl:ml[4em] md:ml-[2em] ml-[2.8em]">{isSignUp ? "Sign Up" : "Login"}</h2>
 
                     <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={isSignUp ? signUpSchema : loginSchema}>
                         <Form>

@@ -11,11 +11,9 @@ export default function ShopSection() {
     const [showMore, setShowMore] = useState(true);
     let [showItemCount, setShowItemCount] = useState(6);
     function ShowMoreAndLess() {
-        // console.log(filterProduct);
         setShowMore(!showMore);
         if (showMore) {
-            const showAllPRoducts = filterProduct.length; //23
-            // console.log(showAllPRoducts);
+            const showAllPRoducts = filterProduct.length;
             setShowItemCount(showAllPRoducts);
         } else {
             setShowItemCount(6);
@@ -44,7 +42,7 @@ export default function ShopSection() {
             <section className="shop-section">
                 <CustomCountainer customclass="bg-gray-100 mt-1 p-2">
                     <CustomTabs data={myCategory} activeTab={activeTab} setActiveTab={setActiveTab} />
-                    <div className="shop-section-product grid xl:grid-cols-3 md:grid-cols-1 gap-5">
+                    <div className="shop-section-product grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-5 md:gap-3.5 gap-2.5">
                         {filterProduct.map((item, index) => showItemCount > index && <ShopData key={index} item={item} />)}
                     </div>
                     <div className="flex items-center justify-center mt-10">

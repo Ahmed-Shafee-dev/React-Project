@@ -13,19 +13,20 @@ export default function Graduatetion({ data }) {
                 </button>
                 {pupop && (
                     <div className="fixed flex items-center justify-center z-20 w-full h-full bg-[rgba(0,0,0,0.6)] top-0 left-0">
-                        <div className="max-w-2xl relative w-[40%] bg-white rounded-2xl p-7">
+                        <div className="max-w-2xl relative w-[40%] bg-white rounded-2xl p-5.5">
                             <button className="absolute top-2 right-1.5" onClick={() => setPopup(!pupop)}>
                                 <MdOutlineExitToApp className=" hover:text-indigo-600 cursor-pointer " size={20} />
                             </button>
                             <img src={data.img} className="w-[20vh] h-[20vh] rounded-2xl" alt="" />
                             <div className="flex flex-col gap-1.5">
-                                <h3 className="font-bold text-xl mt-[0.2em]">name : {data.name}</h3>
-                                <span>age : {data.age}</span>
-                                <p>graduatetions year : {data.graduatetionYears}</p>
-                                <span>certificate : {data.certificate}</span>
-                                <span>graduatetionFrom : {data.graduatetionFrom}</span>
+                                <h3 className="font-bold xl:text-xl text-[0.7em] xl:mt-[0.2em] mt-[0.2em]">name : {data.name}</h3>
+                                <div className="xl:text-[1em] text-[0.6em] flex flex-col gap-1">
+                                    <span>age : {data.age}</span>
+                                    <p>graduatetions year : {data.graduatetionYears}</p>
+                                    <span>certificate : {data.certificate}</span>
+                                    <span>graduatetionFrom : {data.graduatetionFrom}</span>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 )}

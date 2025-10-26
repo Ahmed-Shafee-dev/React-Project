@@ -21,7 +21,7 @@ export default function ShopData({ item }) {
         <>
             <CounterProvider>
                 <section>
-                    <div className="shop-data relative h-[50vh] rounded-2xl overflow-hidden bg-red-800 mt-4 group">
+                    <div className="shop-data relative xl:h-[45vh] md:h-[40vh] h-[30vh] rounded-2xl overflow-hidden mt-4 group">
                         <button
                             className="absolute cursor-pointer px-3.5 py-1.5 top-4 left-3 bg-zinc-200 text-blue-700 capitalize z-10 rounded-3xl"
                             onClick={() => {

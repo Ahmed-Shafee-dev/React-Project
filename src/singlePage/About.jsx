@@ -32,13 +32,14 @@ useEffect(() => {
     }, []);
     return (
         <>
-            <div className="m-auto mt-40 relative w-[20em]" data-aos="fade-right">
-                <h2 className="text-3xl font-semibold m-auto ml-10 top-10 text-blue-700 capitalize">Who are we</h2>
-                <svg className="text-blue-800 mt-2.5 w-64" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <div className="m-auto mt-40 relative xl:w-[15em] md:w-[12.5em] w-[13.5em]">
+                {/* data-aos="fade-right" */}
+                <h2 className="xl:text-3xl md:text-2xl text-xl font-semibold xl:ml-6 md:ml-8 ml-12 text-blue-700 capitalize">Who are we</h2>
+                <svg className="text-blue-800 mt-2.5 w-55" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="red" stroke-width="3"></path>
                 </svg>
             </div>
-            <p className="m-auto w-[60em] mt-9 font-semibold" data-aos="fade-right">
+            <p className="m-auto xl:px-25 md:px-20 px-10 xl:mt-9 md:mt-8 mt-4 font-semibold xl:text-[1em] md:text-[0.8em] text-[0.7em]" data-aos="fade-right">
                 The Courses Academy is a specialized learning platform designed to empower students and professionals to develop their skills across various fields. It offers a wide range of training
                 programs in programming, design, marketing, and business management, delivered by certified experts in a simple and practical way. Learners can access the courses online anytime and
                 anywhere, with accredited certificates that enhance their career opportunities, help them stand out in the job market, and support continuous personal and professional growth.
@@ -62,7 +63,7 @@ useEffect(() => {
                                 }}>
                                 All
                             </li>
-                            {graduatetionYears.map((year,i) => (
+                            {graduatetionYears.map((year, i) => (
                                 <li
                                     key={i}
                                     className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
