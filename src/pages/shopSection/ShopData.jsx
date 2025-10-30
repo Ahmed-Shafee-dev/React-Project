@@ -54,7 +54,7 @@ export default function ShopData({ item }) {
                                 <div className="flex flex-col">
                                     <h2 className="text-xl font-bold mt-4">{item.title}</h2>
                                     <p className="text-gray-600 mt-2">About : {item.description}</p>
-                                    <span className="text-gray-600 mt-2">Price is : {item.Price}</span>
+                                    <span className="text-gray-600 mt-2">Price is : {item.price}</span>
                                     <span className="text-gray-600 mt-2">subject : {item.subject}</span>
                                 </div>
                             </div>
